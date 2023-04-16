@@ -31,3 +31,6 @@ aws cloudformation describe-stacks
 
 ./update.bat InstaUdagramProject server.yml network.json
 ./destroy.bat InstaUdagramProject
+
+login aws
+aws configure or aws configure set aws_session_token
