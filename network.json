@@ -1,7 +1,7 @@
 [
   {
     "ParameterKey": "EnvironmentName",
-    "ParameterValue": "InstaUdagramProject"
+    "ParameterValue": "UdagramProject"
   },
   {
     "ParameterKey": "VpcCIDR",

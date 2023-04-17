@@ -23,14 +23,27 @@ Outputs:
 
 create stack cloudformation:
 
-./create.bat InstaUdagramProject server.yml network.json
-or
 aws cloudformation create-stack --stack-name ourdemoinfra --template-body file://server.yml --parameters file://network.json --region=us-east-1
 
 aws cloudformation describe-stacks
 
+./create.bat InstaUdagramProject server.yml network.json
+
 ./update.bat InstaUdagramProject server.yml network.json
+
 ./destroy.bat InstaUdagramProject
 
 login aws
 aws configure or aws configure set aws_session_token
+
+step create
+
+0. check bucket
+   aws s3 ls
+
+1. create bucket name s3
+   aws s3 mb s3://{{your-name-s3}} --region "us-east-1"
+
+2.upload file to bucket name created on s3
+aws s3 cp --recursive {{your-directory-file-upload}} s3://{{bucket-name-created}} --region "us-east-1"
+example: aws s3 cp --recursive C:\Users\ADMIN\OneDrive\Desktop\nd9991-c2-Infrastructure-as-Code-v1\project_starter\website s3://udacity-phatht8 --region "us-east-1"
