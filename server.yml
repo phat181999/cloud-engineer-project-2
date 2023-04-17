@@ -215,8 +215,8 @@ Resources:
               - s3:Get*
               - s3:List*
             Resource:
-              - arn:aws:s3:::udacity-demo-1
-              - arn:aws:s3:::udacity-demo-1/*
+              - arn:aws:s3:::udacity-phatht8
+              - arn:aws:s3:::udacity-phatht8/*
       Roles:
         - Ref: UdacityS3ReadOnlyEC2
 
