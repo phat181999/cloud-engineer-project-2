@@ -48,4 +48,4 @@ step create
 aws s3 cp --recursive {{your-directory-file-upload}} s3://{{bucket-name-created}} --region "us-east-1"
 example: aws s3 cp --recursive C:\Users\ADMIN\OneDrive\Desktop\nd9991-c2-Infrastructure-as-Code-v1\project_starter\website s3://udacity-phatht8 --region "us-east-1"
 
-website: http://insta-webap-1pgmfci6vgcxa-218506452.us-east-1.elb.amazonaws.com/
+http://insta-webap-yuonzprhkccs-1406563326.us-east-1.elb.amazonaws.com/
