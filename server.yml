@@ -280,7 +280,7 @@ Resources:
       ImageId:
         ami-0cf01248a7b2f1812
         # ToDo: Change the key-pair name, as applicable to you.
-      KeyName: phat-keypair
+        #KeyName: phat-keypair
       IamInstanceProfile: !Ref ProfileWithRolesForOurApp
       SecurityGroups:
         - Ref: WebServerSecGroup
