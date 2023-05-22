@@ -1,0 +1,15 @@
+jobs:
+  build-template:
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout
+      - restore_cache:
+          keys: [frontend-udacity]
+      - run:
+          name: Build template
+
+workflows:
+  default:
+    jobs:
+      - build-template
